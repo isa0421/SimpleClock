@@ -51,17 +51,6 @@ namespace SimpleClock
             txtWeekDay.Text = DateTime.Now.ToString("dddd");     // 顯示星期幾
         }
 
-        // 停止之前的播放
-        private void stopWaveOut()
-        {
-            if (waveOut != null)
-            {
-                waveOut.Stop();
-                waveOut.Dispose();
-                waveOut = null;
-            }
-        }
-
         private void btnSetAlert_Click(object sender, EventArgs e)
         {
             timerAlert.Start(); // 啟動鬧鐘計時器
@@ -108,6 +97,17 @@ namespace SimpleClock
                 {
                     timerAlert.Stop(); // 停止鬧鐘計時器
                 }
+            }
+        }
+
+        // 停止之前的播放
+        private void stopWaveOut()
+        {
+            if (waveOut != null)
+            {
+                waveOut.Stop();
+                waveOut.Dispose();
+                waveOut = null;
             }
         }
     }
