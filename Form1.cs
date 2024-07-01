@@ -272,5 +272,10 @@ namespace SimpleClock
         {
 
         }
+
+        private void txtStopWatch_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

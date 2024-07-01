@@ -263,12 +263,14 @@
             // 
             // txtStopWatch
             // 
+            this.txtStopWatch.Enabled = false;
             this.txtStopWatch.Font = new System.Drawing.Font("微軟正黑體", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtStopWatch.Location = new System.Drawing.Point(6, 3);
             this.txtStopWatch.Name = "txtStopWatch";
             this.txtStopWatch.Size = new System.Drawing.Size(676, 114);
             this.txtStopWatch.TabIndex = 0;
             this.txtStopWatch.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtStopWatch.TextChanged += new System.EventHandler(this.txtStopWatch_TextChanged);
             // 
             // tabPage3
             // 
@@ -349,6 +351,7 @@
             // 
             // txtCountDown
             // 
+            this.txtCountDown.Enabled = false;
             this.txtCountDown.Font = new System.Drawing.Font("微軟正黑體", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtCountDown.Location = new System.Drawing.Point(3, 3);
             this.txtCountDown.Name = "txtCountDown";
